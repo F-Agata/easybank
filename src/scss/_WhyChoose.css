@@ -1,0 +1,33 @@
+.whyChoose {
+    min-width: 375px;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+
+    background-color: hsl(220, 16%, 96%);
+}
+
+.whyChoose__text{
+    margin: 40px 20px;
+}
+
+.whyChoose__title {
+    margin-top: 20px;
+}
+
+.whyChoose__paragraph {
+    margin-top: 20px;
+}
+
+
+
+
+.benefit {
+    margin: 40px 20px;
+}
+
+.benefit__title {
+    margin: 20px 0;
+    font-size: 24px;
+}
+
