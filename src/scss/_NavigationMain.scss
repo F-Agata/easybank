@@ -1,0 +1,43 @@
+.navigation {
+  height: 60px;
+
+  //width: 100%;
+  margin: 15px 0px;
+  //border: hotpink 2px solid;
+
+
+  display: flex;
+
+  position: sticky;
+  top: 0;
+};
+
+
+.navigation__wrapLogo {
+  height: 25px;
+  margin-top: 15px;
+  margin-left: 20px;
+  //padding: 5px 0px;
+  //margin-right: 20px;
+  justify-self: flex-start;
+  //border: red 2px solid;
+}
+
+.navigation__logo {
+  height: 100%;
+
+}
+
+.navigation__wrapIconNavigation {
+  height: 25px;
+  margin-top: 15px;
+  margin-right: 20px;
+  justify-self: flex-end;
+  //border: purple 2px solid;
+  flex-grow: 1;
+  text-align: right;
+}
+
+.iconNavigation {
+  height: 100%;
+}
