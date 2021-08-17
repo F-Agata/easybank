@@ -45,6 +45,10 @@
 .header__text {
 margin: 20px;
 
+    max-width: 500px;
+    /*border: cornflowerblue solid 2px;*/
+    align-self: center;
+
 
 
 

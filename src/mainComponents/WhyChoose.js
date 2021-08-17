@@ -29,7 +29,7 @@ const benefitsList = [
 
 const WhyChoose = () => {
 
-    const oneBenefit = benefitsList.map(benefit => (
+        const oneBenefit = benefitsList.map(benefit => (
         <div className={"benefit"} key={benefit.title}>
             <div className={"benefit__pictureWrapp"}>
                 <img className={"benefit__picture"} src={benefit.picture} alt={benefit.title}/>

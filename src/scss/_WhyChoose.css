@@ -3,12 +3,20 @@
     max-width: 900px;
     width: 100%;
     margin: 0 auto;
+    text-align: center;
 
     background-color: hsl(220, 16%, 96%);
+
+    display: flex;
+    flex-direction: column;
+    /*align-content: center;*/
 }
 
 .whyChoose__text{
     margin: 40px 20px;
+    max-width: 500px;
+    /*border: olivedrab solid 2px;*/
+    align-self: center;
 }
 
 .whyChoose__title {
@@ -24,6 +32,9 @@
 
 .benefit {
     margin: 40px 20px;
+    max-width: 500px;
+    /*border: cornflowerblue solid 2px;*/
+    align-self: center;
 }
 
 .benefit__title {

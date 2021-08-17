@@ -1,8 +1,10 @@
 import React from 'react'
 
 import './scss/_App.scss';
-import NavigationMain from "./mainComponents/NavigationMain";
+
 import Header from "./mainComponents/Header"
+import LatestArticle from "./mainComponents/LatestArticles"
+import NavigationMain from "./mainComponents/NavigationMain";
 import WhyChoose from "./mainComponents/WhyChoose";
 
 function App() {
@@ -11,6 +13,7 @@ function App() {
       <NavigationMain/>
       <Header/>
       <WhyChoose/>
+      <LatestArticle/>
 
     </div>
   );
