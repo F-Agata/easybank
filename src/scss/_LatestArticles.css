@@ -5,6 +5,8 @@
     margin: 0 auto;
     text-align: center;
 
+    padding-bottom: 40px;
+
     background-color:  hsl(0, 0%, 98%);
 
     display: flex;
