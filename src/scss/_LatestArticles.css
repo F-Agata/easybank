@@ -1,0 +1,70 @@
+.latestArticles {
+    min-width: 375px;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+    background-color:  hsl(0, 0%, 98%);
+
+    display: flex;
+    flex-direction: column;
+/*align-content: center;*/
+}
+
+.latestArticles__text{
+    margin: 40px 20px;
+    max-width: 500px;
+    /*border: olivedrab solid 2px;*/
+    align-self: center;
+}
+
+
+
+
+.oneArticle {
+    margin: 20px 20px;
+    padding-bottom: 40px;
+    max-width: 500px;
+    /*border: cornflowerblue solid 2px;*/
+    align-self: center;
+    text-align: left;
+
+    background-color: white;
+    border-radius: 10px;
+}
+
+.oneArticle__pictureWrapp {
+    overflow: hidden;
+    margin: 0 auto;
+    /*width: 100%;*/
+    border-radius: 10px;
+
+
+//align-self: center;
+}
+
+.oneArticle__picture {
+    width: 100%;
+}
+
+.oneArticle__title {
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+
+.oneArticle__author {
+    margin: 30px 30px 10px 30px;
+    font-size: 12px;
+}
+
+.oneArticle__title {
+    margin: 0px 30px;
+    font-size: 20px;
+
+}
+
+.oneArticle__text {
+    margin: 10px 30px;
+}
