@@ -15,5 +15,15 @@
 }
 
 .footer__wrapLogo {
-    border: aquamarine solid 2px;
+   margin: 20px 0px;
+
+}
+
+.footer__btnRequestInvite {
+    align-self: center;
+    margin: 20px 0px;
+}
+
+.footer__infoCopy {
+    margin: 20px 0px;
 }

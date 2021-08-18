@@ -84,7 +84,7 @@ margin: 20px;
     line-height: 25px;
 }
 
-.header__btnGetStarted {
+.header__btnRequestInvite {
     margin: 40px 0;
 
 }
@@ -103,10 +103,15 @@ margin: 20px;
     font-weight: bold;
     color: white;
 
+
+
     cursor: pointer;
 }
 
 .btnAll:hover {
-
-    opacity: 70%;
+    /*filter: brightness(1.2);*/
+    /*opacity: 70%;*/
+    background:  linear-gradient(90deg, lighten(hsl(136, 65%, 51%),10%) 0%, lighten(hsl(192, 70%, 51%),10%) 100%);
 }
+
+/*lighten*/

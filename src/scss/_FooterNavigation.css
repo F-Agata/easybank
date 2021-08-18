@@ -1,0 +1,27 @@
+.footerNavigation{
+    margin: 20px 0px;
+}
+
+
+
+.footerNavigation__li{
+    padding: 10px;
+    list-style: none;
+
+    cursor: pointer;
+
+}
+
+
+
+.footerNavigation__link {
+    color: hsl(220, 16%, 96%);
+    text-decoration: none;
+
+
+}
+
+.footerNavigation__link:hover {
+    color: hsl(136, 65%, 51%);
+
+}

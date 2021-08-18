@@ -53,6 +53,11 @@
 .oneArticle__title {
     margin: 20px 0;
     font-size: 24px;
+    cursor: pointer;
+}
+
+.oneArticle__title:hover {
+    color: hsl(136, 65%, 51%);
 }
 
 

@@ -19,7 +19,7 @@ const  Header = () => {
             <div className={"header__text"}>
                 <h1 className={"header__title titleAll"}>Next generation digital banking</h1>
                 <p className={"header__paragraph paragraphAll"}>Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.</p>
-                <button className={"header__btnGetStarted btnAll"}>Request Invite</button>
+                <button className={"header__btnRequestInvite btnAll"}>Request Invite</button>
             </div>
 
         </div>

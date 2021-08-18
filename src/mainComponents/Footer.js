@@ -1,6 +1,6 @@
 import React from 'react'
 
-import logo from "../img/logo.svg";
+import logoWhite from "../img/logo-white.svg";
 
 
 import FooterIcons from "./FooterIcons";
@@ -15,7 +15,7 @@ const Footer = () => {
         <footer className={"footer"}>
 
             <div className={"footer__wrapLogo"}>
-                <img className={"footer__logo"} src={logo} alt={"logo"}/>
+                <img className={"footer__logo"} src={logoWhite} alt={"logo"}/>
             </div>
 
             <div className={"footer__wrapIcons"}>
@@ -26,9 +26,9 @@ const Footer = () => {
                 <FooterNavigation/>
             </div>
 
-            <button className={"header__btnGetStarted btnAll"}>Request Invite</button>
+            <button className={"footer__btnRequestInvite btnAll"}>Request Invite</button>
 
-            <p className={"footer__info paragraphAll"}>© Easybank, All Rights Reserved</p>
+            <p className={"footer__infoCopy paragraphAll"}>© Easybank, All Rights Reserved</p>
 
 
 
