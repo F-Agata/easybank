@@ -15,21 +15,26 @@ const Footer = () => {
     return (
         <footer className={"footer"}>
 
-            <div className={"footer__wrapLogo"}>
+            <div className={"footer__logoAndIcons"}>
+             <div className={"footer__wrapLogo"}>
                 <img className={"footer__logo"} src={logoWhite} alt={"logo"}/>
+             </div>
+
+             <div className={"footer__wrapIcons"}>
+                <FooterIcons/>
+             </div>
             </div>
 
-            <div className={"footer__wrapIcons"}>
-                <FooterIcons/>
-            </div>
 
             <div className={"footer__wrapFooterNavigation"}>
                 <FooterNavigation/>
             </div>
 
-            <button className={"footer__btnRequestInvite btnAll"}>Request Invite</button>
+            <div className={"footer__btnAndCopy"}>
+             <button className={"footer__btnRequestInvite btnAll"}>Request Invite</button>
 
-            <p className={"footer__infoCopy paragraphAll"}>© Easybank, All Rights Reserved</p>
+             <p className={"footer__infoCopy paragraphAll"}>© Easybank, All Rights Reserved</p>
+            </div>
 
 
 

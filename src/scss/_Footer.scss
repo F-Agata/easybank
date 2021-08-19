@@ -19,9 +19,19 @@
         max-width: 1440px;
         flex-direction: row;
         flex-wrap: wrap;
-        padding: 20px 60px;
+        padding: 40px 60px;
         border: hotpink 2px solid;
     }
+}
+
+.footer__logoAndIcons {
+    @media (min-width: 992px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
 }
 
 .footer__wrapLogo {
@@ -29,13 +39,11 @@
     border: gold 2px solid;
 
     @media (min-width: 992px) {
-        order: 1;
-        width: 25%;
-        align-self: flex-start;
-        justify-self: flex-start;
-        margin: 0;
-        padding: 0;
+        margin: 0px;
+
     }
+
+
 
 }
 
@@ -45,13 +53,9 @@
     justify-content: center;
 
     @media (min-width: 992px) {
-        order: 4;
-        width: 25%;
-        align-self: flex-start;
-        justify-self: flex-start;
-        margin: 0;
-        padding: 0;
+
     }
+
 
 }
 
@@ -59,40 +63,50 @@
     border: deepskyblue 2px solid;
 
     @media (min-width: 992px) {
-        order: 2;
         width: 40%;
-        //flex-grow: 1;
-        margin: 0;
-        padding: 0;
+
     }
 
+
+    }
+
+
+.footer__btnAndCopy {
+    @media (min-width: 992px) {
+        flex-grow: 1;
+        text-align: right;
+        border: green 2px solid;
+
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+
+
+    }
 }
+
 
 .footer__btnRequestInvite {
     align-self: center;
     margin: 20px 0px;
     border: orange 2px solid;
-
     @media (min-width: 992px) {
-        order: 3;
-        width: 25%;
-        align-self: flex-start;
-        justify-self: flex-end;
         margin: 0;
-        padding: 0;
+        align-self: flex-end;
+
     }
+
 }
 
 .footer__infoCopy {
     margin: 20px 0px;
     border: blueviolet 2px solid;
-
     @media (min-width: 992px) {
-        order: 5;
-        width: 25%;
-        align-self: flex-start;
-        justify-self: flex-end;
         margin: 0;
-        padding: 0;
+
+
     }
+
 }
