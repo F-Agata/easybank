@@ -16,9 +16,14 @@
     @media (min-width: 992px) {
         max-width: 1440px;
 
-        flex-direction: row-reverse;
+        flex-direction: reverse;
 
-        background: hsl(0, 0%, 98%) url("../img/bg-intro-desktop.svg") no-repeat  ;
+        background: hsl(0, 0%, 98%) url("../img/bg-intro-desktop.svg") no-repeat bottom ;
+        //background-size: 80%;
+
+        position: relative;
+        overflow-y: visible;
+        overflow-x: hidden;
 
     }
 
@@ -33,12 +38,12 @@
 
     @media (min-width: 992px) {
         width: 50%;
-        //overflow-x: hidden;
-        //overflow-y: auto;
-        //align-self: flex-end;
-        //justify-self: flex-end;
         margin-right: 0px;
         padding-right: 0px;
+        position: absolute;
+        left: 55%;
+        top: -40px;
+        overflow: visible;
 
     }
 
@@ -49,7 +54,7 @@
     margin-top: -120px;
 
     @media (min-width: 992px) {
-        margin-right: -240px;
+        //margin-right: -240px;
     }
     /*//height: 100%;*/
 
@@ -61,14 +66,18 @@
 margin: 20px;
 
     max-width: 500px;
-    border: cornflowerblue solid 2px;
+    //border: cornflowerblue solid 2px;
     align-self: center;
 
 
     @media (min-width: 992px) {
-        width: 50%;
+        align-self: flex-start;
+        width: 100%;
         flex-grow: 1;
-        margin-left: 60px;
+        padding-left: 60px;
+        margin-top: 120px;
+        margin-bottom: 120px;
+        padding-right: 10px;
         text-align: left;
     }
 

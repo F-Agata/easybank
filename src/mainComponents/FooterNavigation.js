@@ -30,7 +30,9 @@ const FooterNavigation = () => {
 
     return (
         <nav className="footerNavigation">
-            {menuItem}
+            <ul className={"footerNavigation__ul"}>
+                {menuItem}
+            </ul>
         </nav>
     );
 

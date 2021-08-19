@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 import logoWhite from "../img/logo-white.svg";
 
 
@@ -29,7 +30,6 @@ const Footer = () => {
             <button className={"footer__btnRequestInvite btnAll"}>Request Invite</button>
 
             <p className={"footer__infoCopy paragraphAll"}>© Easybank, All Rights Reserved</p>
-
 
 
 

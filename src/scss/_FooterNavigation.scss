@@ -1,7 +1,27 @@
 .footerNavigation{
     margin: 20px 0px;
+
+    @media (min-width: 992px) {
+        margin: 0;
+        padding: 0;
+
+    }
 }
 
+
+.footerNavigation__ul {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 992px) {
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+
+    }
+}
 
 
 .footerNavigation__li{
@@ -9,6 +29,15 @@
     list-style: none;
 
     cursor: pointer;
+
+    @media (min-width: 992px) {
+        width: 50%;
+            margin: 0;
+            padding: 0 0 10px 0;
+
+
+
+    }
 
 }
 
