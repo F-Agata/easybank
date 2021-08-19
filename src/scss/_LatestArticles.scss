@@ -12,6 +12,10 @@
     display: flex;
     flex-direction: column;
 /*align-content: center;*/
+
+
+    @media (min-width: 992px) {
+        max-width: 1440px;}
 }
 
 .latestArticles__text{
