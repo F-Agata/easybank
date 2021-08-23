@@ -20,7 +20,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         padding: 40px 60px;
-        border: hotpink 2px solid;
+        //border: hotpink 2px solid;
     }
 }
 
@@ -36,7 +36,7 @@
 
 .footer__wrapLogo {
    margin: 20px 0px;
-    border: gold 2px solid;
+    //border: gold 2px solid;
 
     @media (min-width: 992px) {
         margin: 0px;
@@ -49,7 +49,7 @@
 
 .footer__wrapIcons {
     display: flex;
-    border: crimson 2px solid;
+    //border: crimson 2px solid;
     justify-content: center;
 
     @media (min-width: 992px) {
@@ -60,10 +60,10 @@
 }
 
 .footer__wrapFooterNavigation {
-    border: deepskyblue 2px solid;
+    //border: deepskyblue 2px solid;
 
     @media (min-width: 992px) {
-        width: 40%;
+        width: 54%;
 
     }
 
@@ -75,7 +75,7 @@
     @media (min-width: 992px) {
         flex-grow: 1;
         text-align: right;
-        border: green 2px solid;
+        //border: green 2px solid;
 
 
             display: flex;
@@ -91,7 +91,7 @@
 .footer__btnRequestInvite {
     align-self: center;
     margin: 20px 0px;
-    border: orange 2px solid;
+    //border: orange 2px solid;
     @media (min-width: 992px) {
         margin: 0;
         align-self: flex-end;
@@ -102,7 +102,7 @@
 
 .footer__infoCopy {
     margin: 20px 0px;
-    border: blueviolet 2px solid;
+    //border: blueviolet 2px solid;
     @media (min-width: 992px) {
         margin: 0;
 

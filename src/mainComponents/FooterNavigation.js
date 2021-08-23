@@ -21,7 +21,7 @@ const FooterNavigation = () => {
 
     const menuItem = itemsListFooterNavigation.map(item => (
 
-        <li className={"footerNavigation__li"} key={item.index}>
+        <li className={`footerNavigation__li footerNavigation__liPosition${item.index}`} key={item.index}>
             <a className={"footerNavigation__link"} href={"#"}>{item.name}</a>
         </li>
 
