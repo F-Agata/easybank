@@ -17,20 +17,25 @@
     @media (min-width: 992px) {
         max-width: 1440px;
 
-        flex-direction: reverse;
+        flex-direction: row;
 
         background: hsl(0, 0%, 98%) url("../img/bg-intro-desktop.svg") no-repeat ;
         //background-size: 80%;
-        background-position-x: right;
-        background-position-y: -100px;
-        background-size: contain;
+        //background-position-x: 120%;
+        //background-position-y: -100px;
+        //background-position-y: 120%;
+        //background-size: contain;
+        //background-size-y: 30%;
+        //background-size-x: 30%;
+        background-size: auto 200%;
+        background-position: 650px -400px;
+        //background-size: clamp(1000px, 80%, 1500px) auto;
 
         position: relative;
 
         //overflow-y: visible;
         //overflow-x: hidden;
         overflow: visible;
-
 
 
     }
@@ -42,16 +47,17 @@
     margin: 0 auto;
     width: 98%;
     align-self: center;
-    border: 2px solid orange;
+    //border: 2px solid orange;
 
     @media (min-width: 992px) {
         width: 50%;
         margin-right: 0px;
         padding-right: 0px;
         position: absolute;
-        left: 55%;
-        top: -40px;
-        overflow-y: auto;
+        right:  0;
+       top: 0;
+
+        overflow-y: visible;
         //overflow-x: auto;
         z-index: 2;
 
@@ -64,11 +70,10 @@
     margin-top: -120px;
 
     @media (min-width: 992px) {
-        //margin-right: -240px;
+        margin-right: -220px;
+        margin-top: -190px;
+
     }
-    /*//height: 100%;*/
-
-
 }
 
 
@@ -86,7 +91,7 @@ margin: 20px;
         flex-grow: 1;
         padding-left: 60px;
         margin-top: 120px;
-        margin-bottom: 120px;
+        margin-bottom: 100px;
         padding-right: 10px;
         text-align: left;
     }
