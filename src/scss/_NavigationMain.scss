@@ -57,8 +57,19 @@
 }
 
 .navigation__wrapNavigation {
+  border: green 2px solid;
+
+  position: fixed;
+  top: 80px;
+
+
+  width: 360px;
+  background-color: white;
+
+
+
   @media (min-width: 768px) {
-  //border: green 2px solid;
+
   flex-grow: 1;
 }}
 

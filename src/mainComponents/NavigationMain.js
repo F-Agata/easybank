@@ -13,10 +13,11 @@ const menuItems = ["Home", "About", "Contact", "Blog", "Careers"]
 
 const NavigationMain = () => {
 
+    const [isOpen, setIsOpen] = useState(false);
+    const [iconMenu, setIconMenu] = useState(false)
+
     const m = useMediaQuery({query: '(min-width: 768px)' });
     const l = useMediaQuery({query: '(min-width: 992px)' });
-    const xl = useMediaQuery({query: '(min-width: 1224px)' });
-
 
 
     const menuItem = menuItems.map(item => (
@@ -25,7 +26,14 @@ const NavigationMain = () => {
             <a className={"navigation__link paragraphAll"} href={"#"}>{item}</a>
         </li>
 
-    ))
+    ));
+
+
+    const changeMenu = () => {
+        setIconMenu (!iconMenu);
+        setIsOpen (!isOpen);
+    }
+
 
 
     return (
@@ -35,19 +43,29 @@ const NavigationMain = () => {
             </div>
 
 
-            {m? null : <div className={"navigation__wrapIconNavigation"}>
-                <img className={"navigation__iconNavigation"} src={navigationOpen} alt={"logo"}/>
+
+            {m? null :
+                <div className={"navigation__wrapIconNavigation"}>
+                 <img
+                    className={"navigation__iconNavigation"}
+                    onClick={changeMenu}
+                    src={iconMenu ? navigationClose : navigationOpen}
+                    alt={"menu"}
+                 />
             </div>}
 
+            {isOpen ?
+                <div className={"navigation__wrapNavigation"}>
+                    <nav className={"navigation__navigation"}>
+                        <ul className={"navigation__ul"}>
+                            {menuItem}
+                        </ul>
+                    </nav>
+                </div>
+                : null
+            }
 
 
-            {/*<div className={"navigation__wrapNavigation"}>*/}
-            {/*    <nav className={"navigation__navigation"}>*/}
-            {/*        <ul className={"navigation__ul"}>*/}
-            {/*            {menuItem}*/}
-            {/*        </ul>*/}
-            {/*    </nav>*/}
-            {/*</div>*/}
 
             {m &&
 

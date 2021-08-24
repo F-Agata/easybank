@@ -16,10 +16,12 @@
 
 
     @media (min-width: 992px) {
-        max-width: 1440px;}
+        max-width: 1440px;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0px 60px;
+    padding: 0px 80px;
+    justify-content: space-between;
+    }
 
 }
 
@@ -55,11 +57,11 @@
     border-top-right-radius: 10px;
 
     @media (min-width: 992px) {
-        width: 20%;
-        flex-grow: 1;
+        width: 23%;
+
         text-align: left;
         align-self: stretch;
-        margin: 40px 10px ;
+        margin: 40px 0px ;
         padding-bottom: 20px;
 
 
@@ -79,7 +81,7 @@
     border-top-right-radius: 10px;
 
     @media (min-width: 992px) {
-        height: 200px;
+        height: 220px;
     }
 
 
