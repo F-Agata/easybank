@@ -27,7 +27,12 @@ const NavigationMain = () => {
     const changeMenu = () => {
         setIconMenu (!iconMenu);
         setIsOpen (!isOpen);
-    }
+    };
+
+    const hiddenMenu = () => {
+        setIconMenu (!iconMenu);
+        setIsOpen (!isOpen);
+    };
 
 
 
@@ -41,27 +46,28 @@ const NavigationMain = () => {
 
             {m? null :
                 <div className={"navigation__wrapIconNavigation"}>
-                 <img
+                   <img
                     className={"navigation__iconNavigation"}
                     onClick={changeMenu}
                     src={iconMenu ? navigationClose : navigationOpen}
                     alt={"menu"}
-                 />
-            </div>}
-
-            {isOpen ?
-                <NavigationMainSmall menuItems={menuItems}/>
-
-                : null
+                   />
+                </div>
             }
 
 
+            {isOpen ?  <NavigationMainSmall menuItems={menuItems}/>: null}
+
 
             {m &&
+                <>
+                    {isOpen ? hiddenMenu() : null}
 
-            <NavigationMainBig menuItems={menuItems}/>
+                    <NavigationMainBig menuItems={menuItems}/>
 
-          }
+                </>
+            }
+
 
 
             {l &&
