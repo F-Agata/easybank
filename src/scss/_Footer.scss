@@ -19,6 +19,7 @@
         max-width: 1440px;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: flex-start;
         padding: 40px 80px;
         //border: hotpink 2px solid;
     }
@@ -26,9 +27,12 @@
 
 .footer__logoAndIcons {
     @media (min-width: 992px) {
+
+
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        //border: mediumpurple 2px solid;
 
     }
 
@@ -63,7 +67,8 @@
     //border: deepskyblue 2px solid;
 
     @media (min-width: 992px) {
-        width: 54%;
+        width: 50%;
+        max-width: 500px;
 
     }
 
@@ -73,16 +78,18 @@
 
 .footer__btnAndCopy {
     @media (min-width: 992px) {
-        flex-grow: 1;
+
+
         text-align: right;
         //border: green 2px solid;
+        margin: 0;
+        justify-self: flex-end;
+        flex-grow: 1;
 
 
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-
-
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
     }
 }
@@ -92,10 +99,11 @@
     align-self: center;
     margin: 20px 0px;
     //border: orange 2px solid;
+
+
     @media (min-width: 992px) {
         margin: 0;
         align-self: flex-end;
-
     }
 
 }
