@@ -1,6 +1,9 @@
 import React, {useState} from 'react'
 import { useMediaQuery } from 'react-responsive'
 
+import NavigationMainSmall from "./NavigationMainSmall";
+import NavigationMainBig from "./NavigationMainBig";
+
 
 
 import logo from "../img/logo.svg"
@@ -19,14 +22,6 @@ const NavigationMain = () => {
     const m = useMediaQuery({query: '(min-width: 768px)' });
     const l = useMediaQuery({query: '(min-width: 992px)' });
 
-
-    const menuItem = menuItems.map(item => (
-
-        <li className={"navigation__li"} key={item}>
-            <a className={"navigation__link paragraphAll"} href={"#"}>{item}</a>
-        </li>
-
-    ));
 
 
     const changeMenu = () => {
@@ -55,13 +50,8 @@ const NavigationMain = () => {
             </div>}
 
             {isOpen ?
-                <div className={"navigation__wrapNavigation"}>
-                    <nav className={"navigation__navigation"}>
-                        <ul className={"navigation__ul"}>
-                            {menuItem}
-                        </ul>
-                    </nav>
-                </div>
+                <NavigationMainSmall menuItems={menuItems}/>
+
                 : null
             }
 
@@ -69,14 +59,9 @@ const NavigationMain = () => {
 
             {m &&
 
-             <div className={"navigation__wrapNavigation"}>
-                <nav className={"navigation__navigation"}>
-                    <ul className={"navigation__ul"}>
-                        {menuItem}
-                    </ul>
-                </nav>
-             </div>
-            }
+            <NavigationMainBig menuItems={menuItems}/>
+
+          }
 
 
             {l &&

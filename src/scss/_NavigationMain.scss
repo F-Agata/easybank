@@ -56,78 +56,7 @@
   height: 100%;
 }
 
-.navigation__wrapNavigation {
-  border: green 2px solid;
 
-  position: fixed;
-  top: 80px;
-
-
-  width: 360px;
-  background-color: white;
-
-
-
-  @media (min-width: 768px) {
-
-  flex-grow: 1;
-}}
-
-//.navigation__navigation {
-//
-//  @media (min-width: 768px) {
-//    display: flex;
-//    border: gold 2px solid;
-//    //flex-grow: 1;
-//  }
-//}
-
-.navigation__ul {
-  @media (min-width: 768px) {
-    display: flex;
-    height: 60px;
-
-    //border: red 2px solid;
-    justify-content: center;
-    //flex-grow: 1;
-  }
-}
-
-.navigation__li {
-  margin: 0px 20px;
-  list-style: none;
-  cursor: pointer;
-
-
-  @media (min-width: 768px) {
-    line-height: 60px;
-    border-bottom: white 4px solid;
-
-      }
-}
-
-.navigation__li:hover {
-  @media (min-width: 768px) {
-    border-bottom: hsl(136, 65%, 51%) 4px solid;
-  }
-}
-
-.navigation__link {
-  text-decoration: none;
-  height: 60px;
-
-  @media (min-width: 768px) {
-
-  }
-}
-.navigation__link:hover {
-
-  @media (min-width: 768px) {
-
-    color: black;
-  }
-
-}
 
 
 .navigation__btnRequestInvite {
@@ -137,8 +66,6 @@
 
 
     height: 40px;
-
-
 
     margin-right: 20px;
 
