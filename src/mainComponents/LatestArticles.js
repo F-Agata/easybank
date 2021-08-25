@@ -32,7 +32,9 @@ const articlesList = [
 
 const LatestArticles = () => {
 
-    const oneArticle = articlesList.map(article => (
+    // TODO: można użyć index z map jako key, jest bezpieczniej
+
+  const oneArticle = articlesList.map(article => (
         <div className={"oneArticle"} key={article.title}>
             <div className={"oneArticle__pictureWrapp"}>
                 <img className={"oneArticle__picture"} src={article.picture} alt={article.title}/>

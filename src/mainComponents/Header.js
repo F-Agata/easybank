@@ -1,6 +1,6 @@
 import React from "react";
 
-
+// TODO zbędne linie
 
 
 import headerIllustration from "../img/image-mockups.png"
@@ -9,6 +9,7 @@ import headerBgIllustrationDesktop from "../img/bg-intro-desktop.svg"
 
 const  Header = () => {
 
+// TODO className =" ={"
 
     return (
         <div className="header">

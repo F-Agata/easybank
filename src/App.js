@@ -16,7 +16,6 @@ function App() {
       <WhyChoose/>
       <LatestArticle/>
       <Footer/>
-
     </div>
   );
 }

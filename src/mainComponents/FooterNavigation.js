@@ -1,5 +1,6 @@
 import React from 'react'
 
+// TODO tutaj to samo co w FooterIcons, index można wziąć z map
 
 const itemsListFooterNavigation = [
     {name: "About Us",
