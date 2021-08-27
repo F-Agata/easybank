@@ -2,12 +2,10 @@ import React from 'react'
 
 const NavigationMainList = ({ menuItems, classType }) => {
 
-    const menuItem = menuItems.map(item => (
-
-        <li className={`navigation__li--${classType}`} key={item}>
+    const menuItem = menuItems.map( (item, index) => (
+        <li className={`navigation__li--${classType}`} key={index}>
             <a className={`navigation__link--${classType} paragraphAll`} href={"#"}>{item}</a>
         </li>
-
     ));
 
     return (
@@ -19,7 +17,6 @@ const NavigationMainList = ({ menuItems, classType }) => {
                 </ul>
             </nav>
         </div>
-
     )
 }
 

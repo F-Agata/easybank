@@ -4,40 +4,35 @@
   width: 100%;
   max-width: 900px;
   display: flex;
-  // center lepszy zamiast marginów, jest wycentrowane
   align-items: center;
   position: sticky;
   top: 0;
   background-color: white;
   z-index: 10;
+
   @media (min-width: 992px) {
     max-width: 1440px;
-    padding: 0px 60px}
+    padding: 0px 60px
+  }
+
+  &__wrapLogo {
+    height: 25px;
+    margin-left: 20px;
+    justify-self: flex-start;
+  }
+
+  &__logo {
+    height: 100%;
+  }
+
+  &__wrapIconNavigation {
+    height: 25px;
+    margin-right: 20px;
+    justify-self: flex-end;
+    flex-grow: 1;
+    text-align: right;
+  }
 };
-
-// TODO czemu bez zagnieżdżania? &__wrapLogo zamiast .navigation__wrapLogo
-
-.navigation__wrapLogo {
-  height: 25px;
-  // margin-top: 15px;
-  // lepszy align-items: center we wraperze
-  margin-left: 20px;
-  justify-self: flex-start;
-}
-
-.navigation__logo {
-  height: 100%;
-}
-
-.navigation__wrapIconNavigation {
-  height: 25px;
-  //margin-top: 15px;
-  // lepszy align-items: center we wraperze
-  margin-right: 20px;
-  justify-self: flex-end;
-  flex-grow: 1;
-  text-align: right;
-}
 
 .iconNavigation {
   height: 100%;

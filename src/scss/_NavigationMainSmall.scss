@@ -1,55 +1,33 @@
 .navigation__wrapNavigation--small {
-  //border: green 2px solid;
-
   position: fixed;
   top: 80px;
   left: 50%;
   transform: translate(-50%, 0);
-
   width: 350px;
   height: 300px;
   background-color: white;
 
 }
 
-
 .navigation__ul--small {
-
     display: flex;
-  flex-direction: column;
+    flex-direction: column;
     height: 60px;
-  background-color: white;
-
-    //border: red 2px solid;
-    //justify-content: center;
-
-
+    background-color: white;
 }
 
 .navigation__li--small {
-
   list-style: none;
   cursor: pointer;
-
-  //background-color: white;
-    line-height: 60px;
-    //border: purple 2px solid;
-
-}
-
-//.navigation__li--small:hover {
-//    color: hsl(136, 65%, 51%) ;
-//
-//}
+  line-height: 60px;
+   }
 
 .navigation__link--small {
   text-decoration: none;
   height: 60px;
-
   color: black;
-
-
 }
+
 .navigation__li--small:hover .navigation__link--small{
   color: hsl(136, 65%, 51%) ;
 };

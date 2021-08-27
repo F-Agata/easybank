@@ -4,20 +4,19 @@
   box-sizing: border-box;
 }
 
-
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
 
-@import "_App";
-@import "_BasicStyle";
-@import "_Footer";
-@import "_FooterIcons";
-@import "_FooterNavigation";
-@import "_Header";
-@import "_LatestArticles";
-@import "_NavigationMain";
-@import "_NavigationMainBig";
-@import "_NavigationMainSmall";
-@import "_WhyChoose";
+@import "App";
+@import "BasicStyle";
+@import "Footer";
+@import "FooterIcons";
+@import "FooterNavigation";
+@import "Header";
+@import "LatestArticles";
+@import "NavigationMain";
+@import "NavigationMainBig";
+@import "NavigationMainSmall";
+@import "WhyChoose";
 
-// TODO przy imporcie w sassie nie trzeba używać "_
+
 

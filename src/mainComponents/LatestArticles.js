@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 import article1img from "../img/image-currency.jpg"
 import article2img from "../img/image-restaurant.jpg"
 import article3img from "../img/image-plane.jpg"
@@ -29,13 +28,10 @@ const articlesList = [
         text: "Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared."}
 ]
 
-
 const LatestArticles = () => {
 
-    // TODO: można użyć index z map jako key, jest bezpieczniej
-
-  const oneArticle = articlesList.map(article => (
-        <div className={"oneArticle"} key={article.title}>
+      const oneArticle = articlesList.map( (article,index) => (
+        <div className={"oneArticle"} key={index}>
             <div className={"oneArticle__pictureWrapp"}>
                 <img className={"oneArticle__picture"} src={article.picture} alt={article.title}/>
             </div>
@@ -43,15 +39,13 @@ const LatestArticles = () => {
             <h3 className={"oneArticle__title titleAll"}>{article.title}</h3>
             <p className={"oneArticle__text paragraphAll"}>{article.text}</p>
         </div>
-
-    ))
+      ))
 
     return (
         <section className={"latestArticles"}>
             <div className={"latestArticles__text"}>
                 <h2 className={"latestArticles__title titleAll"}>Latest Articles</h2>
             </div>
-
             {oneArticle}
         </section>
     );

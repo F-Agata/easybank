@@ -1,43 +1,30 @@
 .navigation__wrapNavigation--big {
-  //border: green 2px solid;
   flex-grow: 1;
   }
 
-
 .navigation__ul--big {
-
     display: flex;
     height: 60px;
-
-    //border: red 2px solid;
     justify-content: center;
-
-
 }
 
 .navigation__li--big {
   margin: 0px 20px;
   list-style: none;
   cursor: pointer;
-
-    line-height: 60px;
-    border-bottom: white 4px solid;
-
-
+  line-height: 60px;
+  border-bottom: white 4px solid;
 }
 
 .navigation__li--big:hover {
-
     border-bottom: hsl(136, 65%, 51%) 4px solid;
-
 }
 
 .navigation__link--big {
   text-decoration: none;
   height: 60px;
-
-
 }
+
 .navigation__link--big:hover {
     color: black;
   }

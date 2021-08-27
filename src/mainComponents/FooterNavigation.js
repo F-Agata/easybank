@@ -3,31 +3,21 @@ import React from 'react'
 // TODO tutaj to samo co w FooterIcons, index można wziąć z map
 
 const itemsListFooterNavigation = [
-    {name: "About Us",
-        index: 0},
-    {name: "Contact",
-        index: 1},
-    {name: "Blog",
-        index: 2},
-    {name: "Careers",
-        index: 3},
-    {name: "Support",
-        index: 4},
-    {name: "Privacy Policy",
-        index: 5},
-
+    {name: "About Us"},
+    {name: "Contact"},
+    {name: "Blog"},
+    {name: "Careers"},
+    {name: "Support"},
+    {name: "Privacy Policy"},
 ]
 
 const FooterNavigation = () => {
 
-    const menuItem = itemsListFooterNavigation.map(item => (
-
-        <li className={`footerNavigation__li footerNavigation__liPosition${item.index}`} key={item.index}>
+    const menuItem = itemsListFooterNavigation.map( (item, index) => (
+        <li className={`footerNavigation__li footerNavigation__liPosition${index}`} key={index}>
             <a className={"footerNavigation__link"} href={"#"}>{item.name}</a>
         </li>
-
     ))
-
 
     return (
         <nav className="footerNavigation">
@@ -36,8 +26,6 @@ const FooterNavigation = () => {
             </ul>
         </nav>
     );
-
-
 }
 
 export default FooterNavigation;

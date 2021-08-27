@@ -26,13 +26,6 @@ const NavigationMain = () => {
         setIsOpen (!isOpen);
     };
 
-    // Tutaj jest powielona funkcja
-
-    // const hiddenMenu = () => {
-    //     setIconMenu (!iconMenu);
-    //     setIsOpen (!isOpen);
-    // };
-
     return (
         <div className="navigation">
             <div className={"navigation__wrapLogo"}>
@@ -48,16 +41,11 @@ const NavigationMain = () => {
                    />
                 </div>
             }
-
-            {/*// TODO zmiana miejsca warunku*/}
-
-            { isOpen && !m ?  <NavigationList menuItems={menuItems} classType="small" /> : null}
-            {/*{ isOpen ?  <NavigationMainSmall menuItems={menuItems}/> : null}*/}
+            { isOpen && !m ?
+                <NavigationList menuItems={menuItems} classType="small" /> : null
+            }
             { m &&
-                <>
-                    {/*{ isOpen ? hiddenMenu() : null}*/}
-                    <NavigationList menuItems={menuItems} classType="big" />
-                </>
+                <NavigationList menuItems={menuItems} classType="big" />
             }
             { l &&
                 <button className={"navigation__btnRequestInvite btnAll"}>Request Invite</button>
