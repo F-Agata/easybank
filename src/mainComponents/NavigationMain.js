@@ -1,10 +1,6 @@
 import React, {useState} from 'react'
 import { useMediaQuery } from 'react-responsive'
 
-// import NavigationMainSmall from "./NavigationMainSmall";
-// import NavigationMainBig from "./NavigationMainBig";
-
-// TODO tutaj można w tych dwóch komponentów wyżej zrobić jeden i mu przekazywać props (big || small)
 import NavigationList from "./NavigationList";
 
 import logo from "../img/logo.svg"

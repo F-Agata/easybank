@@ -1,4 +1,8 @@
-.btnAll {
+import React from 'react'
+import styled from 'styled-components'
+
+
+const BtnAll = styled.button`
   background:  linear-gradient(90deg, hsl(136, 65%, 51%) 0%, hsl(192, 70%, 51%) 100%);
   border-color: transparent;
   border-radius: 50px;
@@ -13,19 +17,6 @@
 
   &:hover {
     background:  linear-gradient(90deg, lighten(hsl(136, 65%, 51%),10%) 0%, lighten(hsl(192, 70%, 51%),10%) 100%);
-  }
-}
+  }`;
 
-
-.paragraphAll {
-  color: hsl(233, 8%, 62%);
-  font-size: 16px;
-  line-height: 25px;
-}
-
-.titleAll {
-  font-size: 35px;
-  font-weight: 400;
-}
-
-
+export default BtnAll;
