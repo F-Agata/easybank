@@ -1,82 +1,82 @@
-.footer {
-    min-width: 375px;
-    max-width: 900px;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    padding: 30px 0px;
-    background-color:  hsl(233, 26%, 24%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-
-    @media (min-width: 992px) {
-        max-width: 1440px;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        padding: 40px 80px;
-        }
-
-    &__logoAndIcons {
-        @media (min-width: 992px) {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-           }
-    }
-
-    &_wrapLogo {
-        margin: 20px 0px;
-
-        @media (min-width: 992px) {
-            margin: 0px;
-        }
-    }
-
-    &__wrapIcons {
-        display: flex;
-        justify-content: center;
-        }
-
-    &__wrapFooterNavigation {
-        @media (min-width: 992px) {
-            width: 50%;
-            max-width: 500px;
-        }
-    }
-
-    &__btnAndCopy {
-        @media (min-width: 992px) {
-            text-align: right;
-            margin: 0;
-            justify-self: flex-end;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-    }
-
-    &__btnRequestInvite {
-        align-self: center;
-        margin: 20px 0px;
-
-        @media (min-width: 992px) {
-            margin: 0;
-            align-self: flex-end;
-        }
-    }
-
-    &__infoCopy {
-        margin: 20px 0px;
-
-        @media (min-width: 992px) {
-            margin: 0;
-        }
-    }
-}
-
-
-
+//.footer {
+//    min-width: 375px;
+//    max-width: 900px;
+//    width: 100%;
+//    margin: 0 auto;
+//    text-align: center;
+//    padding: 30px 0px;
+//    background-color:  hsl(233, 26%, 24%);
+//    display: flex;
+//    flex-direction: column;
+//    justify-content: center;
+//    align-content: center;
+//
+//    @media (min-width: 992px) {
+//        max-width: 1440px;
+//        flex-direction: row;
+//        flex-wrap: wrap;
+//        justify-content: flex-start;
+//        padding: 40px 80px;
+//        }
+//
+//    &__logoAndIcons {
+//        @media (min-width: 992px) {
+//            display: flex;
+//            flex-direction: column;
+//            justify-content: space-between;
+//           }
+//    }
+//
+//    &_wrapLogo {
+//        margin: 20px 0px;
+//
+//        @media (min-width: 992px) {
+//            margin: 0px;
+//        }
+//    }
+//
+//    &__wrapIcons {
+//        display: flex;
+//        justify-content: center;
+//        }
+//
+//    &__wrapFooterNavigation {
+//        @media (min-width: 992px) {
+//            width: 50%;
+//            max-width: 500px;
+//        }
+//    }
+//
+//    &__btnAndCopy {
+//        @media (min-width: 992px) {
+//            text-align: right;
+//            margin: 0;
+//            justify-self: flex-end;
+//            flex-grow: 1;
+//            display: flex;
+//            flex-direction: column;
+//            justify-content: space-between;
+//        }
+//    }
+//
+//    &__btnRequestInvite {
+//        align-self: center;
+//        margin: 20px 0px;
+//
+//        @media (min-width: 992px) {
+//            margin: 0;
+//            align-self: flex-end;
+//        }
+//    }
+//
+//    &__infoCopy {
+//        margin: 20px 0px;
+//
+//        @media (min-width: 992px) {
+//            margin: 0;
+//        }
+//    }
+//}
+//
+//
+//

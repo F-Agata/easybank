@@ -10,11 +10,12 @@
   color: white;
   cursor: pointer;
   transition: 0.5s;
+
+  &:hover {
+    background:  linear-gradient(90deg, lighten(hsl(136, 65%, 51%),10%) 0%, lighten(hsl(192, 70%, 51%),10%) 100%);
+  }
 }
 
-.btnAll:hover {
-  background:  linear-gradient(90deg, lighten(hsl(136, 65%, 51%),10%) 0%, lighten(hsl(192, 70%, 51%),10%) 100%);
-}
 
 .paragraphAll {
   color: hsl(233, 8%, 62%);

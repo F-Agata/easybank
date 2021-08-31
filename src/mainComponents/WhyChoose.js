@@ -1,50 +1,65 @@
 import React from 'react'
+import styled from 'styled-components'
 
-import onlineBanking from "../img/icon-online.svg"
-import simpleBudgeting from "../img/icon-budgeting.svg"
-import fastOnboarding from "../img/icon-onboarding.svg"
-import openApi from "../img/icon-api.svg"
+import TitleAll from "../basicStyle/TitleAll";
+import ParagraphAll from "../basicStyle/ParagraphAll";
 
+import WhyChooseOneBenefit from "./WhyChooseOneBenefit"
 
-const benefitsList = [
-    {picture: onlineBanking,
-        title: "Online Banking",
-        text: "Individual property parameters are set respectively. Because the image is put underneath the color overlay, its property parameters are also placed after color overlay parameters."
-    },
-    {picture: simpleBudgeting,
-        title: "Simple Budgeting",
-        text: "Benefit of this method is you can implement it for other cases easily, for example, you want to make the blue color overlaying the image with certain opacity.security features we allow to help secure your files"
-    },
-    {picture: fastOnboarding,
-        title: "Fast Onboarding",
-        text: "Securely share files and foldesr with friends, family and colleagues for live collaboration. No email attachments required"
-    },
-    {picture: openApi,
-        title: "Open API",
-        text: "Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared."}
-]
+const WrappWhyChoose = styled.section`
+  min-width: 375px;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: ${props => props.theme.colors.lightGrayishBlue};
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+
+  @media (min-width: 992px) {
+    max-width: 1440px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px 80px;
+    justify-content: space-between;
+  }`
+
+const TextWrapp = styled.div`
+  margin: 40px 20px;
+  max-width: 500px;
+  align-self: center;
+  justify-self: center;
+
+  @media (min-width: 992px) {
+    max-width: 1440px;
+    width: 100%;
+    align-self: flex-start;
+    flex-grow: 1;
+    text-align: left;
+  }`
+
+const Title = styled(TitleAll)`
+  margin-top: 20px;`
+
+const Paragraph = styled(ParagraphAll)`
+  margin-top: 20px;
+
+  @media (min-width: 992px) {
+    width: 55%;
+  }`
 
 const WhyChoose = () => {
 
-        const oneBenefit = benefitsList.map( (benefit, index) => (
-        <div className={"benefit"} key={index}>
-            <div className={"benefit__pictureWrapp"}>
-                <img className={"benefit__picture"} src={benefit.picture} alt={benefit.title}/>
-            </div>
-            <h3 className={"benefit__title titleAll"}>{benefit.title}</h3>
-            <p className={"benefit__text paragraphAll"}>{benefit.text}</p>
-        </div>
-
-    ))
-
     return (
-        <section className={"whyChoose"}>
-            <div className={"whyChoose__text"}>
-                <h2 className={"whyChoose__title titleAll"}>Why choose Easybank?</h2>
-                <p className={"whyChoose__paragraph paragraphAll"}>We leverege Open Banking to turn your bank account into your financial hub. Control your finances like never before.</p>
-            </div>
-            {oneBenefit}
-        </section>
+        <WrappWhyChoose>
+            <TextWrapp>
+                <Title>Why choose Easybank?</Title>
+                <Paragraph>We leverege Open Banking to turn your bank account into your financial hub. Control your finances like never before.</Paragraph>
+            </TextWrapp>
+            <WhyChooseOneBenefit/>
+        </WrappWhyChoose>
     );
 }
 
