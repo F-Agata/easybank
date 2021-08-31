@@ -1,4 +1,4 @@
-.whyChoose {
+//.whyChoose {
     //min-width: 375px;
     //max-width: 900px;
     //width: 100%;
@@ -18,33 +18,33 @@
     //    justify-content: space-between;
     //}
 
-    &__text{
-        margin: 40px 20px;
-        max-width: 500px;
-        align-self: center;
-        justify-self: center;
+    //&__text{
+        //margin: 40px 20px;
+        //max-width: 500px;
+        //align-self: center;
+        //justify-self: center;
+        //
+        //@media (min-width: 992px) {
+        //    max-width: 1440px;
+        //    width: 100%;
+        //    align-self: flex-start;
+        //    flex-grow: 1;
+        //    text-align: left;
+        //}
+    //}
 
-        @media (min-width: 992px) {
-            max-width: 1440px;
-            width: 100%;
-            align-self: flex-start;
-            flex-grow: 1;
-            text-align: left;
-        }
-    }
-
-    &__title {
-        margin-top: 20px;
-    }
-
-    &__paragraph {
-        margin-top: 20px;
-
-        @media (min-width: 992px) {
-            width: 55%;
-        }
-    }
-}
+//    &__title {
+//        margin-top: 20px;
+//    }
+//
+//    &__paragraph {
+//        margin-top: 20px;
+//
+//        @media (min-width: 992px) {
+//            width: 55%;
+//        }
+//    }
+//}
 
 //.benefit {
     //margin: 40px 20px;

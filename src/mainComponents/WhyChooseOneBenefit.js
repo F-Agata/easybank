@@ -49,8 +49,8 @@ const WhyChooseOneBenefit = () => {
 
     const oneBenefit = benefitsList.map( (benefit, index) => (
         <OneBenefitWrapp  key={index}>
-            <div className={"benefit__pictureWrapp"}>
-                <img className={"benefit__picture"} src={benefit.picture} alt={benefit.title}/>
+            <div>
+                <img src={benefit.picture} alt={benefit.title}/>
             </div>
             <TitleAll__Benefit>{benefit.title}</TitleAll__Benefit>
             <ParagraphAll>{benefit.text}</ParagraphAll>

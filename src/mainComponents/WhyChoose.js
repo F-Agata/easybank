@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import TitleAll from "../basicStyle/TitleAll";
+import ParagraphAll from "../basicStyle/ParagraphAll";
+
 import WhyChooseOneBenefit from "./WhyChooseOneBenefit"
 
 const WhyChooseWrapp = styled.section`
@@ -24,14 +27,40 @@ const WhyChooseWrapp = styled.section`
   }
 `
 
+const WhyChoose__TextWrapp = styled.div`
+  margin: 40px 20px;
+  max-width: 500px;
+  align-self: center;
+  justify-self: center;
+
+  @media (min-width: 992px) {
+    max-width: 1440px;
+    width: 100%;
+    align-self: flex-start;
+    flex-grow: 1;
+    text-align: left;
+  }
+`
+const WhyChoose__title = styled(TitleAll)`
+  margin-top: 20px;
+`
+
+const WhyChoose__paragraph = styled(ParagraphAll)`
+  margin-top: 20px;
+
+  @media (min-width: 992px) {
+    width: 55%;
+  }
+`
+
 const WhyChoose = () => {
 
     return (
         <WhyChooseWrapp>
-            <div className={"whyChoose__text"}>
-                <h2 className={"whyChoose__title titleAll"}>Why choose Easybank?</h2>
-                <p className={"whyChoose__paragraph paragraphAll"}>We leverege Open Banking to turn your bank account into your financial hub. Control your finances like never before.</p>
-            </div>
+            <WhyChoose__TextWrapp>
+                <WhyChoose__title>Why choose Easybank?</WhyChoose__title>
+                <WhyChoose__paragraph>We leverege Open Banking to turn your bank account into your financial hub. Control your finances like never before.</WhyChoose__paragraph>
+            </WhyChoose__TextWrapp>
             <WhyChooseOneBenefit/>
         </WhyChooseWrapp>
     );
