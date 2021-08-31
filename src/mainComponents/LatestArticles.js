@@ -1,54 +1,58 @@
 import React from 'react'
+import styled from 'styled-components'
 
-import article1img from "../img/image-currency.jpg"
-import article2img from "../img/image-restaurant.jpg"
-import article3img from "../img/image-plane.jpg"
-import article4img from "../img/image-confetti.jpg"
+import TitleAll from "../basicStyle/TitleAll";
 
 
-const articlesList = [
-    {picture: article1img,
-        author: "Claire Robinson",
-        title: "Receive money in any currency with no fees",
-        text: "Individual property parameters are set respectively. Because the image is put underneath the color overlay, its property parameters are also placed after color overlay parameters."
-    },
-    {picture: article2img,
-        author: "Wilson Hutton",
-        title: "Treat yourself without worrying about money",
-        text: "Benefit of this method is you can implement it for other cases easily, for example, you want to make the blue color overlaying the image with certain opacity.security features we allow to help secure your files"
-    },
-    {picture: article3img,
-        author: "Wilson Hutton",
-        title: "Take Your Easybank card wherever you go",
-        text: "Securely share files and foldesr with friends, family and colleagues for live collaboration. No email attachments required"
-    },
-    {picture: article4img,
-        author: "Claire Robinson",
-        title: "Our Invite-only Beta accounts are now live!",
-        text: "Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared."}
-]
+import LatestArticlesOneArticle from "./LatestArticlesOneArtice"
+
+const LastesArticlesWrapp = styled.section`
+  min-width: 375px;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 40px;
+  background-color:  hsl(0, 0%, 98%);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+
+  @media (min-width: 992px) {
+    max-width: 1440px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px 80px;
+    justify-content: space-between;
+  }
+  `
+
+const LatestArticles_text = styled.div`
+  margin: 40px 20px;
+  max-width: 500px;
+  align-self: center;
+
+  @media (min-width: 992px) {
+    max-width: 1440px;
+    width: 100%;
+    align-self: flex-start;
+    flex-grow: 1;
+    text-align: left;
+    margin: 40px 20px 0px 20px;
+  }
+`
 
 const LatestArticles = () => {
 
-      const oneArticle = articlesList.map( (article,index) => (
-        <div className={"oneArticle"} key={index}>
-            <div className={"oneArticle__pictureWrapp"}>
-                <img className={"oneArticle__picture"} src={article.picture} alt={article.title}/>
-            </div>
-            <p className={"oneArticle__author paragraphAll"}>By {article.author}</p>
-            <h3 className={"oneArticle__title titleAll"}>{article.title}</h3>
-            <p className={"oneArticle__text paragraphAll"}>{article.text}</p>
-        </div>
-      ))
-
     return (
-        <section className={"latestArticles"}>
-            <div className={"latestArticles__text"}>
-                <h2 className={"latestArticles__title titleAll"}>Latest Articles</h2>
-            </div>
-            {oneArticle}
-        </section>
-    );
+        <LastesArticlesWrapp>
+            <LatestArticles_text>
+                <TitleAll>Latest Articles</TitleAll>
+            </LatestArticles_text>
+            <LatestArticlesOneArticle/>
+        </LastesArticlesWrapp>
+    )
 }
 
 export default LatestArticles;

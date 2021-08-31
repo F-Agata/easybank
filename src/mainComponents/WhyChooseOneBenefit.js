@@ -38,12 +38,13 @@ const OneBenefitWrapp = styled.div`
        text-align: left;
        align-self: stretch;
       margin: 40px 0px;
-}`;
+}
+`;
 
-const TitleAll__Benefit = styled(TitleAll)`
+const TitleAll_Benefit = styled(TitleAll)`
   margin: 20px 0;
   font-size: 24px;
-`
+`;
 
 const WhyChooseOneBenefit = () => {
 
@@ -52,7 +53,7 @@ const WhyChooseOneBenefit = () => {
             <div>
                 <img src={benefit.picture} alt={benefit.title}/>
             </div>
-            <TitleAll__Benefit>{benefit.title}</TitleAll__Benefit>
+            <TitleAll_Benefit>{benefit.title}</TitleAll_Benefit>
             <ParagraphAll>{benefit.text}</ParagraphAll>
         </OneBenefitWrapp>
     ))

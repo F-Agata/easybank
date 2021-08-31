@@ -27,7 +27,7 @@ const WhyChooseWrapp = styled.section`
   }
 `
 
-const WhyChoose__TextWrapp = styled.div`
+const WhyChoose_TextWrapp = styled.div`
   margin: 40px 20px;
   max-width: 500px;
   align-self: center;
@@ -41,11 +41,11 @@ const WhyChoose__TextWrapp = styled.div`
     text-align: left;
   }
 `
-const WhyChoose__title = styled(TitleAll)`
+const WhyChoose_title = styled(TitleAll)`
   margin-top: 20px;
 `
 
-const WhyChoose__paragraph = styled(ParagraphAll)`
+const WhyChoose_paragraph = styled(ParagraphAll)`
   margin-top: 20px;
 
   @media (min-width: 992px) {
@@ -57,10 +57,10 @@ const WhyChoose = () => {
 
     return (
         <WhyChooseWrapp>
-            <WhyChoose__TextWrapp>
-                <WhyChoose__title>Why choose Easybank?</WhyChoose__title>
-                <WhyChoose__paragraph>We leverege Open Banking to turn your bank account into your financial hub. Control your finances like never before.</WhyChoose__paragraph>
-            </WhyChoose__TextWrapp>
+            <WhyChoose_TextWrapp>
+                <WhyChoose_title>Why choose Easybank?</WhyChoose_title>
+                <WhyChoose_paragraph>We leverege Open Banking to turn your bank account into your financial hub. Control your finances like never before.</WhyChoose_paragraph>
+            </WhyChoose_TextWrapp>
             <WhyChooseOneBenefit/>
         </WhyChooseWrapp>
     );
