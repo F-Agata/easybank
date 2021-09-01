@@ -38,13 +38,11 @@ const OneBenefitWrapp = styled.div`
        text-align: left;
        align-self: stretch;
       margin: 40px 0px;
-}
-`;
+}`;
 
 const TitleAll_Benefit = styled(TitleAll)`
   margin: 20px 0;
-  font-size: 24px;
-`;
+  font-size: 24px;`;
 
 const WhyChooseOneBenefit = () => {
 

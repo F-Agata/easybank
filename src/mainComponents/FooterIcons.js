@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from 'styled-components'
 
 import iconFacebook from "../img/icon-facebook.svg"
 import iconYouTube from "../img/icon-youtube.svg"
@@ -14,12 +15,27 @@ const iconsList = [
     {name: iconInstagram},
 ]
 
+const WrapIcon = styled.div`
+  margin: 0px 5px;
+  cursor: pointer;
+
+  &:hover {
+    color: hsl(136, 65%, 51%);
+  }`
+
+const Icon = styled.img`
+  color: hsl(136, 65%, 51%);
+
+  &:hover {
+    color: hsl(136, 65%, 51%);
+  }`
+
 const FooterIcons = () => {
 
        const oneIcon = iconsList.map( (icon, index) => (
-               <div className={"footer__wrapIcon"} key={index}>
-                 <img className={"footer__icon"} src={icon.name} alt={"icon"}/>
-               </div>
+               <WrapIcon key={index}>
+                 <Icon src={icon.name} alt={"icon"}/>
+               </WrapIcon>
     ))
 
     return (

@@ -6,7 +6,7 @@ import ParagraphAll from "../basicStyle/ParagraphAll";
 
 import WhyChooseOneBenefit from "./WhyChooseOneBenefit"
 
-const WhyChooseWrapp = styled.section`
+const WrappWhyChoose = styled.section`
   min-width: 375px;
   max-width: 900px;
   width: 100%;
@@ -24,10 +24,9 @@ const WhyChooseWrapp = styled.section`
     flex-wrap: wrap;
     padding: 0px 80px;
     justify-content: space-between;
-  }
-`
+  }`
 
-const WhyChoose_TextWrapp = styled.div`
+const TextWrapp = styled.div`
   margin: 40px 20px;
   max-width: 500px;
   align-self: center;
@@ -39,30 +38,28 @@ const WhyChoose_TextWrapp = styled.div`
     align-self: flex-start;
     flex-grow: 1;
     text-align: left;
-  }
-`
-const WhyChoose_title = styled(TitleAll)`
-  margin-top: 20px;
-`
+  }`
 
-const WhyChoose_paragraph = styled(ParagraphAll)`
+const Title = styled(TitleAll)`
+  margin-top: 20px;`
+
+const Paragraph = styled(ParagraphAll)`
   margin-top: 20px;
 
   @media (min-width: 992px) {
     width: 55%;
-  }
-`
+  }`
 
 const WhyChoose = () => {
 
     return (
-        <WhyChooseWrapp>
-            <WhyChoose_TextWrapp>
-                <WhyChoose_title>Why choose Easybank?</WhyChoose_title>
-                <WhyChoose_paragraph>We leverege Open Banking to turn your bank account into your financial hub. Control your finances like never before.</WhyChoose_paragraph>
-            </WhyChoose_TextWrapp>
+        <WrappWhyChoose>
+            <TextWrapp>
+                <Title>Why choose Easybank?</Title>
+                <Paragraph>We leverege Open Banking to turn your bank account into your financial hub. Control your finances like never before.</Paragraph>
+            </TextWrapp>
             <WhyChooseOneBenefit/>
-        </WhyChooseWrapp>
+        </WrappWhyChoose>
     );
 }
 

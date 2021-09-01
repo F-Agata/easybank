@@ -9,7 +9,6 @@ import article2img from "../img/image-restaurant.jpg"
 import article3img from "../img/image-plane.jpg"
 import article4img from "../img/image-confetti.jpg"
 
-
 const articlesList = [
     {picture: article1img,
         author: "Claire Robinson",
@@ -48,8 +47,7 @@ const OneArticleWrapp = styled.div`
     align-self: stretch;
     margin: 40px 0px ;
     padding-bottom: 20px;
-  }
-`
+  }`
 
 const OneArticle_pictureWrapp = styled.div`
   overflow: hidden;
@@ -61,27 +59,25 @@ const OneArticle_pictureWrapp = styled.div`
 
   @media (min-width: 992px) {
     height: 220px;
-  }
-`
+  }`
 
 const OneArticle_picture = styled.img`
   width: 100%;
   height: 100%;
-  object-fit: cover;
-`
+  object-fit: cover;`
 
 const OneArticle_author = styled(ParagraphAll)`
   margin: 30px 30px 10px 30px;
-  font-size: 12px;
-`
+  font-size: 12px;`
+
 const OneArticle_text = styled(ParagraphAll)`
   margin: 10px 30px;
 
   @media (min-width: 992px) {
     justify-self: stretch;
     flex-grow: 1;
-  }
-`
+  }`
+
 const OneArticle_title = styled(TitleAll)`
   margin: 20px 30px;
   font-size: 20px;
@@ -90,9 +86,7 @@ const OneArticle_title = styled(TitleAll)`
 
   &:hover {
     color: hsl(136, 65%, 51%);
-  }
-`
-
+  }`
 
 const LatestArticlesOneArticle = () => {
 

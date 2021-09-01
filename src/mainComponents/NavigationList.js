@@ -1,4 +1,7 @@
 import React from 'react'
+import styled from 'styled-components'
+
+import ParagraphAll from "../basicStyle/ParagraphAll";
 
 const NavigationMainList = ({ menuItems, classType }) => {
 

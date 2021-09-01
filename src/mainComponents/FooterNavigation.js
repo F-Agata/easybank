@@ -1,6 +1,5 @@
 import React from 'react'
-
-// TODO tutaj to samo co w FooterIcons, index można wziąć z map
+import styled from 'styled-components'
 
 const itemsListFooterNavigation = [
     {name: "About Us"},
@@ -9,22 +8,63 @@ const itemsListFooterNavigation = [
     {name: "Careers"},
     {name: "Support"},
     {name: "Privacy Policy"},
-]
+];
+
+const NavigationWrapp = styled.nav`
+  margin: 20px 0px;
+
+  @media (min-width: 992px) {
+    margin: 0;
+    padding: 0;
+  }`
+
+const Navigation_ul = styled.ul`
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 992px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 40px 0 40px;
+    padding: 0;
+    text-align: left;
+    justify-content: space-between;
+  }`
+
+const Navigation_li = styled.li`
+  padding: 10px;
+  list-style: none;
+  cursor: pointer;
+
+  @media (min-width: 992px) {
+    width: 50%;
+    margin: 0;
+    padding: 0 0 0 60px;
+  }`
+
+const Navigation_link = styled.a`
+  color: hsl(220, 16%, 96%);
+  text-decoration: none;
+  transition: 0.5s;
+
+  &:hover {
+    color: hsl(136, 65%, 51%);
+  }`
 
 const FooterNavigation = () => {
 
     const menuItem = itemsListFooterNavigation.map( (item, index) => (
-        <li className={`footerNavigation__li footerNavigation__liPosition${index}`} key={index}>
-            <a className={"footerNavigation__link"} href={"#"}>{item.name}</a>
-        </li>
+        <Navigation_li className={`footerNavigation__liPosition${index}`} key={index}>
+            <Navigation_link href={"#"}>{item.name}</Navigation_link>
+        </Navigation_li>
     ))
 
     return (
-        <nav className="footerNavigation">
-            <ul className={"footerNavigation__ul"}>
+        <NavigationWrapp>
+            <Navigation_ul>
                 {menuItem}
-            </ul>
-        </nav>
+            </Navigation_ul>
+        </NavigationWrapp>
     );
 }
 

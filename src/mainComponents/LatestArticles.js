@@ -3,7 +3,6 @@ import styled from 'styled-components'
 
 import TitleAll from "../basicStyle/TitleAll";
 
-
 import LatestArticlesOneArticle from "./LatestArticlesOneArtice"
 
 const LastesArticlesWrapp = styled.section`
@@ -25,8 +24,7 @@ const LastesArticlesWrapp = styled.section`
     flex-wrap: wrap;
     padding: 0px 80px;
     justify-content: space-between;
-  }
-  `
+  }`
 
 const LatestArticles_text = styled.div`
   margin: 40px 20px;
@@ -40,8 +38,7 @@ const LatestArticles_text = styled.div`
     flex-grow: 1;
     text-align: left;
     margin: 40px 20px 0px 20px;
-  }
-`
+  }`
 
 const LatestArticles = () => {
 
