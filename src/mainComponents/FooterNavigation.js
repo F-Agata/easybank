@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 const itemsListFooterNavigation = [
     {name: "About Us"},
@@ -40,6 +40,41 @@ const Navigation_li = styled.li`
     width: 50%;
     margin: 0;
     padding: 0 0 0 60px;
+  }
+
+  @media (min-width: 992px) {
+    ${( props ) => {
+      switch(props.order) {
+        case 0:
+          return css`order: 1`
+          break;
+        case 1:
+          return css`
+            order: 3;
+            margin-bottom: 20px;
+            margin-top: 20px;
+          `
+          break;
+        case 2:
+          return css`order: 5`
+          break;
+        case 3:
+          return css`order: 2`
+          break;
+        case 4:
+          return css`
+            order: 4;
+            margin-bottom: 20px;
+            margin-top: 20px;
+          `
+          break;
+        case 5:
+          return css`order: 6`
+          break;
+        default:
+          return css`order: 1`
+      }
+    }
   }`
 
 const Navigation_link = styled.a`
@@ -54,7 +89,7 @@ const Navigation_link = styled.a`
 const FooterNavigation = () => {
 
     const menuItem = itemsListFooterNavigation.map( (item, index) => (
-        <Navigation_li className={`footerNavigation__liPosition${index}`} key={index}>
+        <Navigation_li order={index} key={index}>
             <Navigation_link href={"#"}>{item.name}</Navigation_link>
         </Navigation_li>
     ))
