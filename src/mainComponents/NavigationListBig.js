@@ -19,7 +19,7 @@ const NavigationLi = styled.li`
   line-height: 60px;
   border-bottom: white 4px solid;
   :hover {
-    border-bottom: hsl(136, 65%, 51%) 4px solid;
+    border-bottom: ${props => props.theme.colors.limeGreen} 4px solid;
   }`
 
 const NavigationLink = styled(LinkAll)`

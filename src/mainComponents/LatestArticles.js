@@ -12,7 +12,7 @@ const LastesArticlesWrapp = styled.section`
   margin: 0 auto;
   text-align: center;
   padding-bottom: 40px;
-  background-color:  hsl(0, 0%, 98%);
+  background-color:  ${props => props.theme.colors.veryLightGray};
   display: flex;
   flex-direction: column;
   align-content: center;

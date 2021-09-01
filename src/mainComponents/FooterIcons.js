@@ -18,15 +18,17 @@ const iconsList = [
 const WrapIcon = styled.div`
   margin: 0px 5px;
   cursor: pointer;
+  
 
-  &:hover {
+  :hover {
     color: hsl(136, 65%, 51%);
   }`
 
 const Icon = styled.img`
-  color: hsl(136, 65%, 51%);
+  color: white;
+  transition: 0.5s;
 
-  &:hover {
+  :hover {
     color: hsl(136, 65%, 51%);
   }`
 

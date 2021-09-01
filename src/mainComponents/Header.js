@@ -17,12 +17,12 @@ const HeaderWrapp = styled.header`
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  background: hsl(0, 0%, 98%) url("../img/bg-intro-mobile.svg") no-repeat right -30px;
+  background: ${props => props.theme.colors.veryLightGray} url("../img/bg-intro-mobile.svg") no-repeat right -30px;
 
   @media (min-width: 992px) {
     max-width: 1440px;
     flex-direction: row;
-    background: hsl(0, 0%, 98%) url("../img/bg-intro-desktop.svg") no-repeat ;
+    background: ${props => props.theme.colors.veryLightGray} url("../img/bg-intro-desktop.svg") no-repeat ;
     background-size: auto 200%;
     background-position: 650px -400px;
     position: relative;

@@ -48,7 +48,7 @@ const Navigation_link = styled.a`
   transition: 0.5s;
 
   &:hover {
-    color: hsl(136, 65%, 51%);
+    color: ${props => props.theme.colors.limeGreen};
   }`
 
 const FooterNavigation = () => {

@@ -12,7 +12,7 @@ const WrappWhyChoose = styled.section`
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  background-color: hsl(220, 16%, 96%);
+  background-color: ${props => props.theme.colors.lightGrayishBlue};
   display: flex;
   flex-direction: column;
   align-content: center;

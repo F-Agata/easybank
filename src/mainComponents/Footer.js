@@ -15,7 +15,7 @@ const WrappFooter = styled.footer`
   margin: 0 auto;
   text-align: center;
   padding: 30px 0px;
-  background-color:  hsl(233, 26%, 24%);
+  background-color: ${props => props.theme.colors.darkBlue};
   display: flex;
   flex-direction: column;
   justify-content: center;
