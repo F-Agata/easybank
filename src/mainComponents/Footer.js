@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import ParagraphAll from "../basicStyle/ParagraphAll";
-import BtnAll from "../basicStyle/BtnAll";
+import ParagraphAll from '../basicStyle/ParagraphAll'
+import BtnAll from '../basicStyle/BtnAll'
 
-import logoWhite from "../img/logo-white.svg";
-import FooterIcons from "./FooterIcons";
-import FooterNavigation from "./FooterNavigation";
+import logoWhite from '../img/logo-white.svg'
+import FooterIcons from './FooterIcons'
+import FooterNavigation from './FooterNavigation'
 
 const WrappFooter = styled.footer`
   min-width: 375px;
@@ -15,7 +15,7 @@ const WrappFooter = styled.footer`
   margin: 0 auto;
   text-align: center;
   padding: 30px 0px;
-  background-color: ${props => props.theme.colors.darkBlue};
+  background-color: ${(props) => props.theme.colors.darkBlue};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,21 +27,24 @@ const WrappFooter = styled.footer`
     flex-wrap: wrap;
     justify-content: flex-start;
     padding: 40px 80px;
-  }`
+  }
+`
 
 const LogoAndIconsWrapper = styled.div`
   @media (min-width: 992px) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }`
+  }
+`
 
 const WrapLogo = styled.div`
   margin: 20px 0px;
 
   @media (min-width: 992px) {
     margin: 0px;
-  }`
+  }
+`
 
 const WrapIcons = styled.div`
   display: flex;
@@ -52,7 +55,8 @@ const WrapFooterNavigation = styled.div`
   @media (min-width: 992px) {
     width: 50%;
     max-width: 500px;
-  }`
+  }
+`
 
 const BtnAndCopyWrapper = styled.div`
   @media (min-width: 992px) {
@@ -63,7 +67,8 @@ const BtnAndCopyWrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }`
+  }
+`
 
 const BtnRequestInvite = styled(BtnAll)`
   align-self: center;
@@ -72,36 +77,37 @@ const BtnRequestInvite = styled(BtnAll)`
   @media (min-width: 992px) {
     margin: 0;
     align-self: flex-end;
-  }`
+  }
+`
 
 const InfoCopy = styled(ParagraphAll)`
   margin: 20px 0px;
 
   @media (min-width: 992px) {
     margin: 0;
-  }`
+  }
+`
 
 const Footer = () => {
-
-    return (
-        <WrappFooter>
-            <LogoAndIconsWrapper>
-             <WrapLogo>
-                <img className={"footer__logo"} src={logoWhite} alt={"logo"}/>
-             </WrapLogo>
-             <WrapIcons>
-                <FooterIcons/>
-             </WrapIcons>
-            </LogoAndIconsWrapper>
-            <WrapFooterNavigation>
-                <FooterNavigation/>
-            </WrapFooterNavigation>
-            <BtnAndCopyWrapper>
-             <BtnRequestInvite>Request Invite</BtnRequestInvite>
-             <InfoCopy>© Easybank, All Rights Reserved</InfoCopy>
-            </BtnAndCopyWrapper>
-        </WrappFooter>
-    );
+  return (
+    <WrappFooter>
+      <LogoAndIconsWrapper>
+        <WrapLogo>
+          <img className={'footer__logo'} src={logoWhite} alt={'logo'} />
+        </WrapLogo>
+        <WrapIcons>
+          <FooterIcons />
+        </WrapIcons>
+      </LogoAndIconsWrapper>
+      <WrapFooterNavigation>
+        <FooterNavigation />
+      </WrapFooterNavigation>
+      <BtnAndCopyWrapper>
+        <BtnRequestInvite>Request Invite</BtnRequestInvite>
+        <InfoCopy>© Easybank, All Rights Reserved</InfoCopy>
+      </BtnAndCopyWrapper>
+    </WrappFooter>
+  )
 }
 
-export default Footer;
+export default Footer

@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import TitleAll from "../basicStyle/TitleAll";
+import TitleAll from '../basicStyle/TitleAll'
 
-import LatestArticlesOneArticle from "./LatestArticlesOneArtice"
+import LatestArticlesOneArticle from './LatestArticlesOneArtice'
 
 const LastesArticlesWrapp = styled.section`
   min-width: 375px;
@@ -12,7 +12,7 @@ const LastesArticlesWrapp = styled.section`
   margin: 0 auto;
   text-align: center;
   padding-bottom: 40px;
-  background-color:  ${props => props.theme.colors.veryLightGray};
+  background-color: ${(props) => props.theme.colors.veryLightGray};
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -24,7 +24,8 @@ const LastesArticlesWrapp = styled.section`
     flex-wrap: wrap;
     padding: 0px 80px;
     justify-content: space-between;
-  }`
+  }
+`
 
 const LatestArticles_text = styled.div`
   margin: 40px 20px;
@@ -38,18 +39,18 @@ const LatestArticles_text = styled.div`
     flex-grow: 1;
     text-align: left;
     margin: 40px 20px 0px 20px;
-  }`
+  }
+`
 
 const LatestArticles = () => {
-
-    return (
-        <LastesArticlesWrapp>
-            <LatestArticles_text>
-                <TitleAll>Latest Articles</TitleAll>
-            </LatestArticles_text>
-            <LatestArticlesOneArticle/>
-        </LastesArticlesWrapp>
-    )
+  return (
+    <LastesArticlesWrapp>
+      <LatestArticles_text>
+        <TitleAll>Latest Articles</TitleAll>
+      </LatestArticles_text>
+      <LatestArticlesOneArticle />
+    </LastesArticlesWrapp>
+  )
 }
 
-export default LatestArticles;
+export default LatestArticles

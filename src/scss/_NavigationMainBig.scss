@@ -1,12 +1,12 @@
 .navigation__wrapNavigation--big {
   flex-grow: 1;
   align-self: center;
-  }
+}
 
 .navigation__ul--big {
-    display: flex;
-    height: 60px;
-    justify-content: center;
+  display: flex;
+  height: 60px;
+  justify-content: center;
 }
 
 .navigation__li--big {
@@ -18,7 +18,7 @@
 }
 
 .navigation__li--big:hover {
-    border-bottom: hsl(136, 65%, 51%) 4px solid;
+  border-bottom: hsl(136, 65%, 51%) 4px solid;
 }
 
 .navigation__link--big {
@@ -27,6 +27,5 @@
 }
 
 .navigation__link--big:hover {
-    color: black;
-  }
-
+  color: black;
+}

@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react'
 import styled from 'styled-components'
 
-import BtnAll from "../basicStyle/BtnAll"
-import ParagraphAll from "../basicStyle/ParagraphAll";
-import TitleAll from "../basicStyle/TitleAll";
+import BtnAll from '../basicStyle/BtnAll'
+import ParagraphAll from '../basicStyle/ParagraphAll'
+import TitleAll from '../basicStyle/TitleAll'
 
-import headerIllustration from "../img/image-mockups.png"
-import headerBgIllustrationMobile from "../img/bg-intro-mobile.svg"
-import headerBgIllustrationDesktop from "../img/bg-intro-desktop.svg"
+import headerIllustration from '../img/image-mockups.png'
+import headerBgIllustrationMobile from '../img/bg-intro-mobile.svg'
+import headerBgIllustrationDesktop from '../img/bg-intro-desktop.svg'
 
 const HeaderWrapp = styled.header`
   min-width: 375px;
@@ -17,17 +17,20 @@ const HeaderWrapp = styled.header`
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  background: ${props => props.theme.colors.veryLightGray} url("../img/bg-intro-mobile.svg") no-repeat right -30px;
+  background: ${(props) => props.theme.colors.veryLightGray}
+    url('../img/bg-intro-mobile.svg') no-repeat right -30px;
 
   @media (min-width: 992px) {
     max-width: 1440px;
     flex-direction: row;
-    background: ${props => props.theme.colors.veryLightGray} url("../img/bg-intro-desktop.svg") no-repeat ;
+    background: ${(props) => props.theme.colors.veryLightGray}
+      url('../img/bg-intro-desktop.svg') no-repeat;
     background-size: auto 200%;
     background-position: 650px -400px;
     position: relative;
     overflow: visible;
-  }`
+  }
+`
 
 const WrapIllustration = styled.div`
   overflow: hidden;
@@ -40,11 +43,12 @@ const WrapIllustration = styled.div`
     margin-right: 0px;
     padding-right: 0px;
     position: absolute;
-    right:  0;
+    right: 0;
     top: 0;
     overflow-y: visible;
     z-index: 2;
-  }`
+  }
+`
 
 const Illustration = styled.img`
   width: 100%;
@@ -53,7 +57,8 @@ const Illustration = styled.img`
   @media (min-width: 992px) {
     margin-right: -220px;
     margin-top: -190px;
-  }`
+  }
+`
 
 const TextWrapp = styled.div`
   margin: 20px;
@@ -69,28 +74,34 @@ const TextWrapp = styled.div`
     margin-bottom: 100px;
     padding-right: 10px;
     text-align: left;
-  }`
+  }
+`
 
 const Title = styled(TitleAll)`
-  margin-bottom: 20px;`
+  margin-bottom: 20px;
+`
 
 const BtnRequestInvite = styled(BtnAll)`
-  margin: 40px 0;`
+  margin: 40px 0;
+`
 
-const  Header = () => {
-
-    return (
-        <HeaderWrapp>
-            <WrapIllustration>
-                <Illustration src={headerIllustration} alt={"headerIllustration"}/>
-            </WrapIllustration>
-            <TextWrapp>
-                <Title>Next generation digital banking</Title>
-                <ParagraphAll>Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.</ParagraphAll>
-                <BtnRequestInvite>Request Invite</BtnRequestInvite>
-            </TextWrapp>
-        </HeaderWrapp>
-    )
-};
+const Header = () => {
+  return (
+    <HeaderWrapp>
+      <WrapIllustration>
+        <Illustration src={headerIllustration} alt={'headerIllustration'} />
+      </WrapIllustration>
+      <TextWrapp>
+        <Title>Next generation digital banking</Title>
+        <ParagraphAll>
+          Take your financial life online. Your Easybank account will be a
+          one-stop-shop for spending, saving, budgeting, investing, and much
+          more.
+        </ParagraphAll>
+        <BtnRequestInvite>Request Invite</BtnRequestInvite>
+      </TextWrapp>
+    </HeaderWrapp>
+  )
+}
 
 export default Header

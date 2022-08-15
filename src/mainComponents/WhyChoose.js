@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import TitleAll from "../basicStyle/TitleAll";
-import ParagraphAll from "../basicStyle/ParagraphAll";
+import TitleAll from '../basicStyle/TitleAll'
+import ParagraphAll from '../basicStyle/ParagraphAll'
 
-import WhyChooseOneBenefit from "./WhyChooseOneBenefit"
+import WhyChooseOneBenefit from './WhyChooseOneBenefit'
 
 const WrappWhyChoose = styled.section`
   min-width: 375px;
@@ -12,7 +12,7 @@ const WrappWhyChoose = styled.section`
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  background-color: ${props => props.theme.colors.lightGrayishBlue};
+  background-color: ${(props) => props.theme.colors.lightGrayishBlue};
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -24,7 +24,8 @@ const WrappWhyChoose = styled.section`
     flex-wrap: wrap;
     padding: 0px 80px;
     justify-content: space-between;
-  }`
+  }
+`
 
 const TextWrapp = styled.div`
   margin: 40px 20px;
@@ -38,34 +39,34 @@ const TextWrapp = styled.div`
     align-self: flex-start;
     flex-grow: 1;
     text-align: left;
-  }`
+  }
+`
 
 const Title = styled(TitleAll)`
-  margin-top: 20px;`
+  margin-top: 20px;
+`
 
 const Paragraph = styled(ParagraphAll)`
   margin-top: 20px;
 
   @media (min-width: 992px) {
     width: 55%;
-  }`
+  }
+`
 
 const WhyChoose = () => {
-
-    return (
-        <WrappWhyChoose>
-            <TextWrapp>
-                <Title>Why choose Easybank?</Title>
-                <Paragraph>We leverege Open Banking to turn your bank account into your financial hub. Control your finances like never before.</Paragraph>
-            </TextWrapp>
-            <WhyChooseOneBenefit/>
-        </WrappWhyChoose>
-    );
+  return (
+    <WrappWhyChoose>
+      <TextWrapp>
+        <Title>Why choose Easybank?</Title>
+        <Paragraph>
+          We leverege Open Banking to turn your bank account into your financial
+          hub. Control your finances like never before.
+        </Paragraph>
+      </TextWrapp>
+      <WhyChooseOneBenefit />
+    </WrappWhyChoose>
+  )
 }
 
-export default WhyChoose;
-
-
-
-
-
+export default WhyChoose
